@@ -18,6 +18,7 @@ export function TopUI(){
     return(
         <header className="top">
         
+        <div className="fixed-header">
         <div className="top-ui">
             <div className="top-ui-logo-group">
                 <img className="top-ui-svg " src = {logo}/>
@@ -88,6 +89,7 @@ export function TopUI(){
                 </button>
             </div>
 
+        </div>
         </div>
         <div className="top-ui-title-container">
             <h1 className="top-ui-title"> Тут покупают дешёвые авиабилеты </h1>    

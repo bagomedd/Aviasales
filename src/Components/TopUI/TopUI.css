@@ -145,3 +145,12 @@
     font-family:var(--roboto);
     display:inline;
 }
+.fixed-header{
+    position:fixed;
+    width:100%;
+    background: var(--main-c);
+    z-index:1;
+    display:flex;
+    justify-content: center;
+    height: 52px;
+}
