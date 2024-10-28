@@ -1,0 +1,294 @@
+.find-tickets{
+    font-family:var(--inter);
+
+    background-color: var(--main-c);
+    padding-top:24px;
+    height:30vh;
+    display:flex;
+    overflow:hidden;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.find-tickets-page{
+    display:block;
+    width:auto;
+    justify-content: center;
+    height:65px;
+    list-style:none;    
+    padding-left:0;
+}
+.find-tickets-category-bar{
+    display:flex;
+    justify-content: center;
+    height:65px;
+    list-style:none;    
+    padding-left:0;
+}
+.find-tickets-category-group{
+    border-radius:12px;
+    display:flex;
+    align-items: center;
+    height:inherit;
+
+    list-style:none;
+    padding-left:0;
+    background-color: var(--main-c-m3);
+    .category-block:last-child{
+        margin-right:4px;
+    }
+}
+.find-tickets-category-block{ 
+    color:var(--light-c);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.choosen-svg{
+    filter: var(--dark-c-svg);
+}
+.unchoosen-svg{
+    filter: var(--main-c-l-svg);
+}
+.choosen-block{
+    background-color:var(--light-c);
+    color:var(--dark-c);
+}
+.unchoosen-block{
+    background-color:inherit;
+    color:var(--main-c-l);
+}
+.category-block-link{
+    font-weight: 700;
+    display:flex;
+    flex-direction:column;
+}
+.category-block{
+    position:relative;
+    width:104px;
+    height:56px;
+
+    font-size:13px;
+    display:flex;
+    font-weight: 500;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    cursor:pointer;
+    transition:
+    background-color 0.6s;
+    .svg{
+        margin-bottom: 7px;
+        width: 20px;
+    }
+    .svg-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.find-tickets-arrow-svg{
+    display: inline-block;
+    position:absolute;
+    right:10px;
+    top:5px;
+    filter:var(--main-c-l-svg);
+}
+.unchoosen-block:hover{
+    background-color:var(--main-c-m2);
+    color:var(--main-c-l);
+}
+.choosen-block{
+    .find-tickets-category-block{
+    color:var(--dark-c);
+    }
+}
+.find-tickets-business{
+    display:flex;
+    height: inherit;  
+    color:var(--main-c-l);
+    margin-left:14px;
+    .category-block{
+        background-color: var(--main-c-m2);
+        height: inherit; 
+    }
+    .svg{
+        width:25px;
+        filter:var(--main-c-l-svg); 
+    }
+    .find-tickets-arrow-svg{
+        width:12px;
+    }
+    .category-block:hover{
+        background-color: var(--main-c-m1);
+    }
+    
+}
+.find-tickets-input-form{
+    padding-top:30px;
+    margin-top:1px;
+}
+.find-tickets-input-group{
+    font-family:var(--inter);
+    display:flex;
+    height:60px;
+    .r-corner{
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        
+    }
+    .l-corner{
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+}
+.find-tickets-input-block{
+    position:relative;
+    height:inherit;
+}
+.find-tickets-input{
+    padding-top:9px;
+    padding-bottom:9px;
+    padding-left:20px;
+    padding-right:20px;
+    height:inherit;
+    border:none;
+    margin-left:2px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15)
+}
+.find-tickets-input::placeholder{
+    color:var(--gray-c);
+    font-size:16px;
+    font-weight:400;
+    font-family:var(--inter);
+}
+.find-tickets-button{
+    background-color:var(--light-c);
+    color:var(--dark-c);
+    margin-left:2px;
+    width:204px;
+    border:none;
+    height:inherit;
+    cursor:pointer;
+    padding-left:18px;
+
+
+    .find-tickets-passenger-count{
+        color:var(--dark-c);
+    }
+    color:var(--gray-c);
+    font-size:16px;
+    font-weight:400;
+    font-family:var(--inter);
+}
+.find-tickets-button-svg{
+    position:absolute;
+    display:inline-block;
+    right:10px;
+    filter:var(--main-c-svg);
+}
+.find-tickets-date-button{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    max-height:42px;
+}
+.find-tickets-passenger-button{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    .find-tickets-passenger-count{
+        display:block;
+    }
+}
+.find-tickets-button-confirm{
+    background-color:var(--accent-c);
+    color:var(--light-c);
+    margin-left:8px;
+
+    font-weight:700;
+    font-size:20px;
+    border-radius:14px;
+}
+
+.find-tickets-under-input{
+    display:flex;
+    font-family:var(--inter);
+    color:var(--light-c);
+    font-size:16px;
+    margin-top:10px;
+    
+}
+.complex-route-button-container{
+    flex-grow:1;
+}
+.complex-route-button{
+    display:flex;
+    font-family:var(--inter);
+    font-size:15px;
+    border:none;
+    background-color: inherit;
+    color:var(--light-c);    
+    .complex-route-button-svg{
+        filter:var(--light-c-svg);
+    }
+    .complex-route-text{
+        padding-left:8px;
+    }
+}
+.complex-route-button{
+    cursor:pointer;
+}
+.under-input-checkbox{
+    width:0;
+    height:0;
+    cursor:pointer;
+}
+
+.under-input-checkmark{
+    position:relative;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    background-color: var(--main-c);
+    border: solid 1px var(--light-c);
+    border-radius:6px;
+    border-color:var(--light-c);
+    transition:
+    background-color 0.4s;
+    .checkmark{
+        position:absolute;
+        top:1px;
+        left:1px;
+        opacity: 0;
+        transition:
+        opacity 0.4s;
+        filter:var(--main-c-svg);
+    }
+}
+.open-ostrovok:hover .under-input-checkbox ~ .under-input-checkmark{
+    background-color:var(--main-c-m1);
+}
+
+
+.open-ostrovok .under-input-checkbox:checked ~ .under-input-checkmark{
+    background-color: var(--light-c);
+    .checkmark{
+        opacity:100;
+    }
+}
+
+.open-ostrovok{
+    display:flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .ostrovok-text{
+        margin-left:8px;
+    }
+}

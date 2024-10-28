@@ -1,0 +1,27 @@
+.recomendations-layout{
+    background-color:var(--gray-c);
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+
+    display:flex;
+    justify-content:center;
+}
+.recomendations-page{
+    
+    width:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    
+}
+.blue-back{
+    display:block;
+    position:absolute;
+    z-index:-1;
+    margin-top:-20px;
+    background-color:var(--main-c);
+    width:100%;
+    height:175px;
+}

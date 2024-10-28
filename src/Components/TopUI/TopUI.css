@@ -1,0 +1,147 @@
+.top{
+    background-color: var(--main-c);
+    height:25vh;
+    width:100%;
+    margin-top:0;
+    display:flex;
+    justify-content: center;
+}
+.top-ui{
+    box-sizing:border-box;
+    padding-left:20px;
+    padding-right:20px;
+    height:50px;
+    width:100%;
+    max-width:1270px;
+    font-size:13px;
+    font-family: var(--inter);
+    color: var(--light-c);
+    display: flex;
+    align-items:center;
+
+    background-color: inherit;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:600;
+    
+    position:fixed;
+}
+.top-ui-block{
+    font-weight:600;
+
+    height:32px;
+    display:flex;
+    align-items: center;
+    margin-left:8px;
+    font-family:inherit;
+    font-size:inherit;
+    background-color: var(--main-c);
+    transition:
+    background-color 0.4s;
+    color: var(--light-c);
+    border:0;
+    border-radius:8px;
+}
+.top-ui-block:hover{
+    cursor:pointer;
+}
+.top-ui-container{
+    padding-right:8px;
+    display:flex;
+    align-items:center;
+}
+.top-ui-svg{
+    filter:var(--light-c-svg); 
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.top-ui-logo-group{
+    width:auto;
+    .top-ui-svg{
+        padding-left:0;
+        padding-right:0;
+    }
+    
+}
+.top-ui-logo-group:hover{
+    cursor:pointer;
+}
+.top-ui-scroll-menu{
+    justify-content: center;
+    flex-grow:2;
+    display:flex;
+    align-items:center;
+    margin-top:0vh;
+
+    
+    position:relative;
+    box-sizing:border-box;
+}
+
+.top-ui-aviatickets-group{
+    display:flex;
+    .top-ui-block{
+    background-color: var(--light-c);
+    color:var(--dark-c);
+    }
+    .top-ui-svg{
+        filter: var(--dark-c-svg);
+    }
+}
+.top-ui-scroll-group{
+    padding-left:0;
+    background-color:var(--main-c-m3);
+    border-top-right-radius:8px;
+    border-bottom-right-radius: 8px;
+    display:flex;
+    .top-ui-block{
+        background-color:var(--main-c-m3);
+        color:var(--main-c-l);
+    }
+    .top-ui-block:hover{
+        background-color: var(--main-c);
+    }
+    .top-ui-svg{
+        filter:var(--main-c-l-svg);
+    }
+}
+.top-ui-business-group{
+
+    display:flex;
+    .top-ui-block{
+        background-color: var(--main-c-m2);
+        
+    }
+    .top-ui-block:hover{
+        background-color:var(--main-c-m1);
+    }
+}
+.top-ui-static-group{
+    float:right;
+    right:0;
+    display:flex;
+    .top-ui-block:hover{
+        background-color: var(--main-c-m2);
+    }
+}
+
+.top-ui-title-container{
+    background-color: var(--main-c);
+
+    padding-left:auto;
+    padding-right:auto;
+    padding-top:0;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    height:inherit;
+}
+.top-ui-title{
+    padding-bottom:5px;
+    font-size: 40px;
+    font-weight:800;
+    color: var(--light-c) ;
+    font-family:var(--roboto);
+    display:inline;
+}
