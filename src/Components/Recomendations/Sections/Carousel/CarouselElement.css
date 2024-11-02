@@ -1,0 +1,48 @@
+.carousel-element{
+    width:200px;
+    height:300px;
+    font-family:var(--inter);
+    letter-spacing:0.6px;
+    font-weight: 400;
+
+    .image-container{
+        width:175px;
+        height:175px;
+        border-radius:15px;
+        .image{
+            width:inherit;
+            height:inherit;
+            border-radius:inherit;
+        }
+    }
+    .title{
+        height:50px;
+        padding-top:5px;
+        font-size:18px;
+    }
+    .city{
+        padding-top:2px;
+        height:15px;
+        color:var(--gray-c);
+    }
+    .ticket{
+        display:flex;
+        align-items: center;
+        padding-top:10px;
+        font-weight:600;
+        .svg-container{
+            display:inline-block;
+            width:25px;
+            height:25px;
+            .svg{
+                width:inherit;
+                filter:var(--gray-c-svg);
+            }
+        }
+        .cost{
+            padding-left:2px;
+        }
+    }
+
+
+}

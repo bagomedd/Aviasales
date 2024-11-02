@@ -1,11 +1,14 @@
 .recomendations-section{
+    padding:0;
     display:inline-block;
     width:388px;
     height:388px;
-    background-color:red;
+    background-color:var(--light-c);
+    border-radius:25px;
 }
 .hot-tickets{
     flex-grow:1;
+    background: linear-gradient(270deg, #62b87a, #8ebc56);
 }
 .width-section{
     grid-column:1/3;
