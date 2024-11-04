@@ -1,0 +1,51 @@
+.weekend-element {
+    width: 360px;
+    height: 131px;
+    background-color: var(--light-c);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-family: var(--inter);
+    position: absolute;
+    right: 40px;
+    bottom: 55px;
+    transition: transform 1s, background-color 1s;
+
+
+    .image-container {
+        padding-left: 10px;
+        width: 111px;
+        height: 111px;
+        border-radius: 10px;
+
+        .image {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+        }
+    }
+
+    .text {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+
+
+        .cost {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .route {
+            padding-top: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .dates {
+            font-size: 16px;
+            font-weight: 300;
+            color: var(--gray-c);
+        }
+    }
+}

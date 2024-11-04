@@ -4,7 +4,7 @@ export function showTopMenu() {
 
         scrollMenu = document.getElementById("top-ui-scroll-menu-id");
         if (!scrollMenu) {
-            alert("THERE IS NO TOP SCROLLL!!!!!!!");
+            console.log("there is no top scroll");
         }
     });
     window.onscroll = () => {
@@ -67,14 +67,16 @@ export function swipeCarouselLeft(carouselElementsId: string) {
         carousel!.style.marginLeft = -itemWidth + "px";
         setTimeout(() => {
             requestAnimationFrame(() => {
-                carousel!.style.transition = "none"; // Отключаем анимацию
+                carousel!.style.transition = "none";
                 carousel!.style.marginLeft = ((childrenCount! - 7) * (-itemWidth) - itemWidth) + "px"; // Быстро возвращаем в начало
-
-                // Снова используем requestAnimationFrame для восстановления transition
                 requestAnimationFrame(() => {
-                    carousel!.style.transition = defaultTransition; // Включаем анимацию снова
+                    carousel!.style.transition = defaultTransition;
                 });
             });
         }, 200);
     }
+}
+
+export function convertDate(date: Date) {
+    return 123;
 }

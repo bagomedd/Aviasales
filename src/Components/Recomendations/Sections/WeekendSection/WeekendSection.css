@@ -1,0 +1,11 @@
+.weekend-section {
+    height: 286px !important;
+    background: linear-gradient(0.375turn, var(--blue-c), var(--sky-c));
+
+    overflow: hidden;
+
+    .weekend-elements {
+        height: inherit;
+        position: relative;
+    }
+}

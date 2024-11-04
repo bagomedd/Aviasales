@@ -1,6 +1,7 @@
 import * as Sections from "./Sections.tsx";
 import { HotPlace } from "./Sections/HotPlace/HotPlace.tsx";
-import { Carousel } from "./Sections/Carousel/Carousel.tsx"
+import { Carousel } from "./Sections/Carousel/Carousel.tsx";
+import { WeekendSection } from "./Sections/WeekendSection/WeekendSection.tsx";
 import "./Recomendations.css";
 import "./SectionsGrid.css";
 export function Recomendations() {
@@ -121,7 +122,42 @@ export function Recomendations() {
                     ]}
                 />
 
-                <Sections.WeekendSection />
+                <WeekendSection
+                    elements={[
+                        {
+                            cityDeparture: "Москва",
+                            cityArrival: "Санкт-петербург",
+                            dateDeparture: new Date(2024, 12, 15),
+                            dateArrival: new Date(2024, 12, 16),
+                            imageUrl: "/images/yellow.png",
+                            cost: 12540,
+                        },
+                        {
+                            cityDeparture: "Москва",
+                            cityArrival: "Астана",
+                            dateDeparture: new Date(2024, 12, 9),
+                            dateArrival: new Date(2024, 12, 10),
+                            imageUrl: "/images/red.png",
+                            cost: 8598,
+                        },
+                        {
+                            cityDeparture: "Москва",
+                            cityArrival: "Казань",
+                            dateDeparture: new Date(2024, 12, 15),
+                            dateArrival: new Date(2024, 12, 16),
+                            imageUrl: "/images/blue.png",
+                            cost: 1488,
+                        },
+                        {
+                            cityDeparture: "Москва",
+                            cityArrival: "Санкт-петербург",
+                            dateDeparture: new Date(2024, 12, 15),
+                            dateArrival: new Date(2024, 12, 16),
+                            imageUrl: "/images/yellow.png",
+                            cost: 12540,
+                        }
+                    ]}
+                />
 
                 <Sections.CostMap />
                 <Sections.CuteKitty />

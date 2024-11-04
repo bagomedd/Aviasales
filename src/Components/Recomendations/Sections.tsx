@@ -11,15 +11,6 @@ export function HotTickets() {
         </div>
     );
 }
-
-export function WeekendSection() {
-    return (
-        <div className="recomendations-section  width-section  weekend-section">
-            {" "}
-            weekend -section{" "}
-        </div>
-    );
-}
 export function CostMap() {
     return (
         <div className="recomendations-section  width-section  cost-map-section">
